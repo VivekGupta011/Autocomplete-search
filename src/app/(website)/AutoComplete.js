@@ -1,4 +1,3 @@
-// pages/index.js
 "use client";
 import { useState } from 'react';
 import Autosuggest from 'react-autosuggest';
@@ -29,7 +28,7 @@ const AutoSuggestComponent = () => {
 
   const onSuggestionSelected = (event, { suggestion }) => {
     console.log(`Selected: ${suggestion.name}`);
-    // Add the selected user to the list
+    // selected user to the list
     setSelectedUsers([...selectedUsers, suggestion]);
     // Clear the input field after selection
     setValue('');
